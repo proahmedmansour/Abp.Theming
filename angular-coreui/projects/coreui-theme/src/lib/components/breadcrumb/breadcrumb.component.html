@@ -1,0 +1,10 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb my-0 ms-2">
+    <li class="breadcrumb-item">
+      <a routerLink="/"><i class="fa fa-home"></i> </a>
+    </li>
+    <li *ngFor="let segment of segments; let last = last" class="breadcrumb-item" [class.active]="last">
+      {{ segment.name | abpLocalization }}
+    </li>
+  </ol>
+</nav>

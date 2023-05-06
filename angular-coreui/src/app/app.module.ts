@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { APP_ROUTE_PROVIDER } from './route.provider';
 import { FeatureManagementModule } from '@abp/ng.feature-management';
 import { AbpOAuthModule } from '@abp/ng.oauth';
+import { CoreUIModule } from 'projects/coreui-theme/src/public-api';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { AbpOAuthModule } from '@abp/ng.oauth';
     IdentityConfigModule.forRoot(),
     TenantManagementConfigModule.forRoot(),
     SettingManagementConfigModule.forRoot(),
-    ThemeBasicModule.forRoot(),
+    // ThemeBasicModule.forRoot(),
+    CoreUIModule,
     FeatureManagementModule.forRoot(),
   ],
   declarations: [AppComponent],

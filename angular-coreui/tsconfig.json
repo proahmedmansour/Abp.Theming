@@ -22,6 +22,9 @@
       ],
       "@proxy/*": [
         "src/app/proxy/*"
+      ],
+      "coreui-theme": [
+        "dist/coreui-theme"
       ]
     },
     "useDefineForClassFields": false
